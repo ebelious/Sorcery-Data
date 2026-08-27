@@ -1,0 +1,2 @@
+# Sorcery-Data
+card data
