@@ -92,7 +92,15 @@ function normalise(card){
      and is what the app's filters expect to find. */
   const rarity = RARITY[lower(e.rarity)] || RARITY[lower(e.slot)] || 'ordinary';
 
+  /* Each printing keeps its OWN slug.
+     Only the default printing's slug was carried through before, which quietly made every
+     other printing unreachable: a foil has a different slug (-f rather than -s), and
+     without it there was no way to name its file, match a downloaded one to it, or work
+     out its image address. The information was in the API all along -- it simply was not
+     being written down. Everything that wants a printing other than the default depends
+     on this one field. */
   const prints = printings.map(p => ({
+    sl: p.slug || '',
     set: (p.set && p.set.name) || '',
     finish: (p.meta && p.meta.finish) || 'Standard',
     rarity: rarity,

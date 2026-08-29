@@ -18,6 +18,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { indexBySlugCore, slugForFile, knownSlugSet } from './slug-match.mjs';
 
 /* Trimmed. A secret pasted with a trailing newline or a stray space is still "set", so an
    emptiness check passes and Google rejects it as malformed -- which reads as "API key not
@@ -171,6 +172,30 @@ async function main() {
     try { manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8')); } catch (e) {}
   }
 
+  /* Art the repository already has. Seeded from what the app was built with, this is
+     nearly the whole set -- so the point of this run is the handful of cards that appeared
+     since, not three thousand files we are holding already.
+     Skipping them is what turns this from a download into a check for updates. */
+  const HAVE_DIR = process.env.IMAGES_DIR || 'images';
+  const already = new Set();
+  let byCore = new Map(), knownSlugs = new Set();
+  if (fs.existsSync(HAVE_DIR)) {
+    const walk = d => { for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (/\.webp$/i.test(e.name)) already.add(e.name.replace(/\.webp$/i, ''));
+    } };
+    walk(HAVE_DIR);
+  }
+  if (already.size && fs.existsSync('cards.json')) {
+    try {
+      const cj = JSON.parse(fs.readFileSync('cards.json', 'utf8')).cards || [];
+      byCore = indexBySlugCore(cj);
+      knownSlugs = knownSlugSet(cj);
+    } catch (e) {}
+  }
+  if (already.size) console.log(already.size + ' images are already in ' + HAVE_DIR + '; those will be skipped.');
+
   console.log('Listing the folder...');
   const files = await listAll(FOLDER_ID);
   console.log('Found ' + files.length + ' image files.');
@@ -179,7 +204,7 @@ async function main() {
     process.exit(1);
   }
 
-  let got = 0, skipped = 0, failed = 0, bytes = 0;
+  let got = 0, skipped = 0, failed = 0, bytes = 0, haveAlready = 0;
   /* A short pause between files. Three thousand requests back to back is what brings the
      throttle down in the first place, and a tenth of a second each adds about five minutes
      to a first run that already takes far longer than that -- while every run after it
@@ -203,6 +228,14 @@ async function main() {
 
   for (const f of files) {
     const dest = path.join(OUT, f.dir, f.name);
+    /* Held already, under the name this file would end up with. No point fetching it. */
+    if (already.size) {
+      const slug = slugForFile(f.name, byCore, knownSlugs) || f.name.replace(/\.(png|jpe?g|webp)$/i, '');
+      /* Counted as done, not merely skipped: the file is in the repository, which is the
+         whole point. Without this the run reports it as outstanding for ever and the
+         workflow keeps waking up to fetch something it already has. */
+      if (already.has(slug)) { skipped++; haveAlready++; continue; }
+    }
     const known = manifest[f.id];
     /* Unchanged since last time AND still on disk: leave it. The checksum comes from
        Drive, so this notices a file that was replaced under the same name. */
@@ -236,7 +269,7 @@ async function main() {
   }
 
   saveManifest();
-  const remaining = files.length - Object.keys(manifest).length;
+  const remaining = Math.max(0, files.length - Object.keys(manifest).length - haveAlready);
   console.log('');
   console.log('Downloaded ' + got + ' (' + (bytes / 1048576).toFixed(1) + ' MB), ' +
               skipped + ' already current, ' + failed + ' failed.');

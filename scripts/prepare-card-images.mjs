@@ -38,6 +38,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { indexBySlugCore, slugForFile, knownSlugSet, allPrintings } from './slug-match.mjs';
 
 const [, , SRC, REPO, ...flags] = process.argv;
 const DRY = flags.includes('--dry');
@@ -46,8 +47,13 @@ if (!SRC || !REPO) {
   console.error('usage: node prepare-card-images.mjs <downloaded-folder> <repo-folder> [--dry]');
   process.exit(1);
 }
-for (const [label, dir] of [['downloaded-folder', SRC], ['repo-folder', REPO]]) {
-  if (!fs.existsSync(dir)) { console.error(label + ' does not exist: ' + dir); process.exit(1); }
+if (!fs.existsSync(SRC)) { console.error('downloaded-folder does not exist: ' + SRC); process.exit(1); }
+/* The destination is only needed when something is actually being written. Requiring it up
+   front meant a dry run -- the very thing you do before committing to anything -- failed
+   unless you had already made the folder it promises not to touch. */
+if (!DRY && !fs.existsSync(REPO)) {
+  fs.mkdirSync(REPO, { recursive: true });
+  console.log('Created ' + REPO);
 }
 
 /* cards.json is the authority on what art is wanted and what each file must be called.
@@ -61,32 +67,25 @@ const cards = JSON.parse(fs.readFileSync(CARDS_FILE, 'utf8')).cards || [];
 
 /* Every printing slug the app might ask for. A card's `sl` is the one it shows by default;
    `prints` covers the others, whose slugs follow the same shape. */
-const wanted = new Map();          // slug -> { set, name }
-for (const c of cards) {
-  if (c.sl) wanted.set(c.sl, { set: String(c.sl).split('-')[0], name: c.n });
-}
-console.log('cards.json asks for ' + wanted.size + ' images.');
-
-/* Match a downloaded file to a slug by NAME, not by position or order.
-   Files come out of the shared folder named all sorts of ways, so the comparison is made
-   on a flattened form -- lower case, everything that is not a letter or digit removed --
-   which survives spaces, punctuation, apostrophes and accents differing between the two
-   sides. A slug like "004-13_treasures_of_britain-b-s" flattens the same way its file
-   does once the set code and finish suffix are stripped off. */
-function flatten(s) {
-  return String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '');
-}
-function slugCore(slug) {
-  const parts = String(slug).split('-');
-  return flatten(parts.slice(1, parts.length - 2).join('-') || parts[1] || '');
+/* EVERY printing, not just the one each card shows by default.
+   Counting only defaults was why a folder full of foils came back as eleven hundred
+   "unmatched" files: they are not unmatched, they are printings this list never asked
+   about. The shared matcher was taught about them; this count was not. */
+const wanted = allPrintings(cards);   // slug -> set code
+const defaults = cards.filter(c => c.sl).length;
+console.log('cards.json asks for ' + wanted.size + ' images (' + defaults +
+            ' cards, ' + (wanted.size - defaults) + ' further printings).');
+if (wanted.size === defaults) {
+  console.warn('');
+  console.warn('  No alternate printings are listed. If foils are expected, cards.json was');
+  console.warn('  built before printing slugs were carried through -- re-run fetch-cards.js.');
+  console.warn('');
 }
 
-const byCore = new Map();          // flattened card name -> [slug, ...]
-for (const [slug, meta] of wanted) {
-  const key = slugCore(slug) || flatten(meta.name);
-  if (!byCore.has(key)) byCore.set(key, []);
-  byCore.get(key).push(slug);
-}
+/* Matching a file to a printing lives in slug-match.mjs, so that this, the seeder and the
+   downloader cannot drift apart -- see the note at the top of that file. */
+const byCore = indexBySlugCore(cards);
+const known = knownSlugSet(cards);
 
 /* Walk the download, including subfolders -- the shared folder is usually split by set. */
 function walk(dir, out = []) {
@@ -100,33 +99,14 @@ function walk(dir, out = []) {
 const files = walk(SRC);
 console.log('Found ' + files.length + ' image files under ' + SRC);
 
-/* A file whose name contains "foil" belongs to the foil printing, and so on. The suffix on
-   a slug says which finish it is: -s standard, -f foil, -rf rainbow. */
-function finishOf(name) {
-  const n = name.toLowerCase();
-  if (/rainbow/.test(n)) return 'rf';
-  if (/foil/.test(n)) return 'f';
-  return 's';
-}
-
 const plan = [];                   // { from, to, slug }
 const unmatched = [];
 for (const file of files) {
-  const base = path.basename(file).replace(/\.(png|jpe?g|webp)$/i, '');
-  const key = flatten(base.replace(/foil|rainbow|standard/gi, ''));
-  const candidates = byCore.get(key);
-  if (!candidates || !candidates.length) { unmatched.push(file); continue; }
-  const want = finishOf(base);
-  let slug = candidates.find(s => s.endsWith('-' + want));
-  /* No slug for this finish. Falling back to whatever else matched the NAME was wrong:
-     a foil file would be written over the standard art, because cards.json carries only
-     the default printing's slug and both flatten to the same card. Silently swapping one
-     printing's art for another's is worse than having none, so it is left out and
-     reported instead. */
-  if (!slug) {
-    if (want !== 's') { unmatched.push(file); continue; }
-    slug = candidates[0];
-  }
+  const slug = slugForFile(path.basename(file), byCore, known);
+  /* null means either no card of that name, or a finish with no slug of its own -- a foil
+     with no foil printing recorded. slug-match refuses to fit that to another printing,
+     because writing foil art over standard art is worse than having none. */
+  if (!slug) { unmatched.push(file); continue; }
   const set = String(slug).split('-')[0];
   plan.push({ from: file, to: path.join(REPO, set, slug + '.webp'), slug });
 }
