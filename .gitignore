@@ -1,0 +1,8 @@
+# The Drive download staging area. Large, transient, and rebuilt on demand -- the art that
+# matters is the sorted copy under images/, not this.
+.drive-cache/
+
+# sharp, installed only to convert art to webp.
+node_modules/
+
+.DS_Store

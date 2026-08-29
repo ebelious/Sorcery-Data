@@ -1,0 +1,14 @@
+{
+  "name": "sorcery-data",
+  "private": true,
+  "description": "Card data and card art for the Sorcery Grimoire app.",
+  "scripts": {
+    "cards": "node scripts/fetch-cards.js",
+    "seed": "node scripts/import-existing-images.mjs",
+    "images": "node scripts/fetch-card-images.mjs",
+    "sort": "node scripts/prepare-card-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.0"
+  }
+}
