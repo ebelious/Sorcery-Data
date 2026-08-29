@@ -1,4 +1,10 @@
-name: Sync card images
+name: Sync card art (REST)
+
+# The name is deliberately NOT "Sync card images" any more. The rclone version was called
+# that, and while both existed the Actions list showed two identical entries with no way to
+# tell which one a run came from. A different name means the sidebar shows this as its own
+# workflow, and a run titled "Sync card images" is the old file still in the repository --
+# delete it.
 
 # Card art comes from the publisher's public folder, per their terms: images are not in the
 # API and their private CDN may not be used to serve them, so released art is downloaded
@@ -19,7 +25,8 @@ name: Sync card images
 #   3. Restrict it to the Drive API (it only ever reads one public folder)
 #   4. Repo -> Settings -> Secrets and variables -> Actions -> New repository secret
 # A plain key is enough because the folder is public; there is no account to authorise and
-# nothing here can reach anything private.
+# nothing here can reach anything private. No OAuth, no consent screen, no refresh token
+# to expire quietly in six months.
 
 on:
   schedule:
@@ -44,7 +51,19 @@ jobs:
     # The download and the conversion both take real time on a full set.
     timeout-minutes: 90
     steps:
+      - name: Which workflow is this
+        # So the log answers "did my new file actually run?" in its first line, rather than
+        # leaving it to be inferred from what fails later.
+        run: |
+          echo "Running .github/workflows/sync-card-images.yml (REST version, no rclone)"
+          echo "commit: ${{ github.sha }}   ref: ${{ github.ref }}"
+
       - uses: actions/checkout@v4
+
+      - name: Show what is in .github/workflows
+        # If an older workflow file is still present it will run too, with its own log.
+        # Listing them here makes a leftover obvious instead of mysterious.
+        run: ls -la .github/workflows/
 
       - name: Stop early if the key is missing
         # Without this the run fails deep inside rclone with something unhelpful.
@@ -66,33 +85,25 @@ jobs:
 
       - uses: actions/cache@v4
         # The folder barely changes between runs, so keeping the download means a normal
-        # month transfers almost nothing. rclone still checks every file against the source.
+        # month transfers almost nothing. The manifest inside it records each file's
+        # checksum, so a file replaced under the same name is still noticed.
         with:
           path: .drive-cache
           key: drive-art-${{ github.run_id }}
           restore-keys: drive-art-
 
-      - name: Install rclone
-        run: |
-          sudo -v && curl -fsSL https://rclone.org/install.sh | sudo bash
-          rclone version
-
       - name: Pull the public folder
+        # NOT rclone. Its drive backend authenticates by OAuth and only by OAuth -- an
+        # api_key does not make it skip that, so it dies before it looks at the folder:
+        #     CRITICAL: failed when making oauth client: empty token found
+        # There is no token because there is no account; the folder is public. Drive's REST
+        # API reads publicly-shared files with a key alone, which is what this does.
         env:
-          KEY: ${{ secrets.GDRIVE_API_KEY }}
+          GDRIVE_API_KEY: ${{ secrets.GDRIVE_API_KEY }}
         run: |
-          mkdir -p .drive-cache
-          # root_folder_id is the folder from their guidance. No token: a public folder read
-          # with an API key needs no account, so this job can see nothing else.
-          rclone copy \
-            :drive,root_folder_id=17IrJkRGmIU9fDSTU2JQEU9JlFzb5liLJ,api_key="$KEY": \
-            .drive-cache \
-            --drive-acknowledge-abuse \
-            --fast-list \
-            --transfers 8 \
-            --retries 3 \
-            --stats 30s --stats-one-line
-          echo "Downloaded $(find .drive-cache -type f | wc -l) files."
+          node scripts/fetch-card-images.mjs \
+            17IrJkRGmIU9fDSTU2JQEU9JlFzb5liLJ \
+            .drive-cache
 
       - name: Sort the art into images/
         # Matches each file to a printing slug from cards.json and writes
