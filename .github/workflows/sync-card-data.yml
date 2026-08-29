@@ -1,0 +1,53 @@
+name: Sync card data
+
+# Their guidance is "poll intermittently" and the rate limit is 30 requests a minute. This
+# makes ONE request, four times a day, and commits only when something actually changed --
+# the card database moves a handful of times a year, so most runs will do nothing at all.
+#
+# Runs in the Sorcery-Data repository, which holds cards.json at the root and card art
+# under images/.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'      # four times a day, off the hour so it isn't in the crush
+  workflow_dispatch:             # and on demand, for when a set drops
+
+# The commit is made by this workflow, so it needs to be able to write.
+permissions:
+  contents: write
+
+concurrency:
+  # Two runs writing cards.json at once would race. Later run waits; it isn't cancelled,
+  # because the one in flight may be the one carrying a new set.
+  group: sync-card-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'     # global fetch(), so nothing to install
+
+      - name: Fetch from the API
+        id: fetch
+        run: node scripts/fetch-cards.js
+
+      # fetch-cards.js sets changed=true only when the card list genuinely differs from
+      # what is already committed -- it ignores its own timestamp when comparing, so an
+      # unchanged database doesn't produce a commit an hour against a multi-megabyte file.
+      - name: Commit if the data changed
+        if: steps.fetch.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cards.json
+          git commit -m "Card data: $(node -e "console.log(require('./cards.json').total)") cards"
+          git push
+
+      - name: Say so when nothing moved
+        if: steps.fetch.outputs.changed != 'true'
+        run: echo "No change since the last import; nothing committed."

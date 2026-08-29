@@ -1,0 +1,117 @@
+name: Sync card images
+
+# Card art comes from the publisher's public folder, per their terms: images are not in the
+# API and their private CDN may not be used to serve them, so released art is downloaded
+# from the public folder and hosted here.
+#
+#     https://drive.google.com/drive/folders/17IrJkRGmIU9fDSTU2JQEU9JlFzb5liLJ
+#
+# WHY THIS IS MONTHLY AND NOT HOURLY
+# Art appears when a set is released -- a few times a year -- and the download is the whole
+# folder, a gigabyte or more. Polling it on the card data's schedule would move a great deal
+# of traffic to discover nothing. Monthly catches a set within weeks, and `workflow_dispatch`
+# catches it the same day when you know one has landed.
+#
+# WHAT THIS NEEDS BEFORE IT WILL RUN
+# A Google Drive API key, stored as the repository secret GDRIVE_API_KEY:
+#   1. console.cloud.google.com -> a project -> enable "Google Drive API"
+#   2. Credentials -> Create credentials -> API key
+#   3. Restrict it to the Drive API (it only ever reads one public folder)
+#   4. Repo -> Settings -> Secrets and variables -> Actions -> New repository secret
+# A plain key is enough because the folder is public; there is no account to authorise and
+# nothing here can reach anything private.
+
+on:
+  schedule:
+    - cron: '40 4 1 * *'         # 04:40 on the 1st
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Match and report only, commit nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-card-images
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    # The download and the conversion both take real time on a full set.
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stop early if the key is missing
+        # Without this the run fails deep inside rclone with something unhelpful.
+        run: |
+          if [ -z "${{ secrets.GDRIVE_API_KEY }}" ]; then
+            echo "::error::GDRIVE_API_KEY is not set. See the comment at the top of this workflow."
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install sharp
+        # Used to convert to webp. The full art set is well over a gigabyte as PNG and a
+        # fraction of that as webp, which matters for a git repository and for every reader
+        # who opens the card grid.
+        run: npm i --no-audit --no-fund sharp
+
+      - uses: actions/cache@v4
+        # The folder barely changes between runs, so keeping the download means a normal
+        # month transfers almost nothing. rclone still checks every file against the source.
+        with:
+          path: .drive-cache
+          key: drive-art-${{ github.run_id }}
+          restore-keys: drive-art-
+
+      - name: Install rclone
+        run: |
+          sudo -v && curl -fsSL https://rclone.org/install.sh | sudo bash
+          rclone version
+
+      - name: Pull the public folder
+        env:
+          KEY: ${{ secrets.GDRIVE_API_KEY }}
+        run: |
+          mkdir -p .drive-cache
+          # root_folder_id is the folder from their guidance. No token: a public folder read
+          # with an API key needs no account, so this job can see nothing else.
+          rclone copy \
+            :drive,root_folder_id=17IrJkRGmIU9fDSTU2JQEU9JlFzb5liLJ,api_key="$KEY": \
+            .drive-cache \
+            --drive-acknowledge-abuse \
+            --fast-list \
+            --transfers 8 \
+            --retries 3 \
+            --stats 30s --stats-one-line
+          echo "Downloaded $(find .drive-cache -type f | wc -l) files."
+
+      - name: Sort the art into images/
+        # Matches each file to a printing slug from cards.json and writes
+        # images/<set>/<slug>.webp. Reports anything it could not place and any printing
+        # with no art, so a rename at their end shows up in the log rather than silently
+        # leaving cards blank.
+        run: |
+          node scripts/prepare-card-images.mjs .drive-cache images \
+            ${{ inputs.dry_run && '--dry' || '' }}
+
+      - name: Commit whatever is new
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images
+          if git diff --cached --quiet; then
+            echo "No new or changed art; nothing committed."
+          else
+            git commit -m "Card art: $(git diff --cached --name-only | wc -l) file(s) added or updated"
+            git push
+          fi
