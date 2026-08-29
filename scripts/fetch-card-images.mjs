@@ -184,7 +184,20 @@ async function main() {
      throttle down in the first place, and a tenth of a second each adds about five minutes
      to a first run that already takes far longer than that -- while every run after it
      downloads almost nothing and so pauses almost never. Tunable if their limits move. */
-  const PACE = Number(process.env.DRIVE_PACE_MS || 120);
+  /* Gentler than before. The throttle was arriving after a couple of hundred files at
+     120ms, and waiting it out inside the same run does not clear it -- the backoff simply
+     climbed to its ceiling and stayed there. Slower is what actually gets through. */
+  const PACE = Number(process.env.DRIVE_PACE_MS || 350);
+
+  /* And a budget. Three thousand files is more than Google will hand over in one sitting
+     however patiently it is asked, so a run takes a slice and stops while it is still
+     being answered politely. What it fetched is recorded, the next run carries on from
+     there, and the set fills in over a few runs instead of failing over and over on the
+     same wall. Better for us and better for them. */
+  const MAX_FILES = Number(process.env.DRIVE_MAX_FILES || 400);
+  const MAX_MS = Number(process.env.DRIVE_MAX_MINUTES || 40) * 60000;
+  const startedAt = Date.now();
+  let stoppedEarly = '';
   let sinceSave = 0;
   const saveManifest = () => fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 
@@ -194,6 +207,9 @@ async function main() {
     /* Unchanged since last time AND still on disk: leave it. The checksum comes from
        Drive, so this notices a file that was replaced under the same name. */
     if (known && known.md5 && f.md5 && known.md5 === f.md5 && fs.existsSync(dest)) { skipped++; continue; }
+    /* Budget spent: stop cleanly rather than pushing into the throttle. */
+    if (got >= MAX_FILES) { stoppedEarly = 'reached this run\'s limit of ' + MAX_FILES + ' files'; break; }
+    if (Date.now() - startedAt > MAX_MS) { stoppedEarly = 'ran out of time for this run'; break; }
     try {
       bytes += await download(f, dest);
       manifest[f.id] = { name: f.name, md5: f.md5, size: f.size };
@@ -209,18 +225,37 @@ async function main() {
     } catch (e) {
       failed++;
       console.warn('  could not fetch ' + f.name + ': ' + e.message);
+      /* Every retry exhausted on a throttle means the door is shut for now, not that this
+         one file is bad. Carrying on would spend the rest of the run collecting the same
+         failure several hundred times. Stop, keep what we have, come back later. */
+      if (/Sorry|unusual traffic|HTTP 403/i.test(e.message)) {
+        stoppedEarly = 'the throttle would not lift';
+        break;
+      }
     }
   }
 
   saveManifest();
+  const remaining = files.length - Object.keys(manifest).length;
   console.log('');
   console.log('Downloaded ' + got + ' (' + (bytes / 1048576).toFixed(1) + ' MB), ' +
               skipped + ' already current, ' + failed + ' failed.');
+  if (stoppedEarly) console.log('Stopped early: ' + stoppedEarly + '.');
+  console.log(remaining > 0
+    ? remaining + ' of ' + files.length + ' still to fetch -- the next run continues from here.'
+    : 'All ' + files.length + ' files are present.');
+  if (process.env.GITHUB_OUTPUT) {
+    fs.appendFileSync(process.env.GITHUB_OUTPUT,
+      'complete=' + (remaining > 0 ? 'false' : 'true') + '\nremaining=' + remaining + '\n');
+  }
+  /* Stopping on budget or on the throttle is not a failure: real progress was made and
+     saved. Exiting non-zero would paint the run red and stop the sorting step from
+     committing art that is perfectly good. */
 
   /* A handful of failures out of a thousand is a bad connection and the next run will
      pick them up. Losing most of them means something is actually wrong, and carrying on
      to the sorting step would commit a half-empty set of art. */
-  if (failed && failed > files.length * 0.1) {
+  if (!stoppedEarly && failed && failed > files.length * 0.1) {
     console.error('Too many failures to trust this run; stopping before anything is sorted.');
     console.error('What did come down is recorded, so running again picks up where this left off.');
     process.exit(1);
