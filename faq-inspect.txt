@@ -1,0 +1,10 @@
+url         https://sorcerytcg.com/cards
+title       Sorcery: Contested Realm
+html bytes  1418045
+strategy    none
+entries     0
+
+--- headings on the page ---
+H3  Quick FiltersAdvanced Filters
+
+--- what was extracted ---
