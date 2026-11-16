@@ -1,6 +1,6 @@
 {
-  "updated": "2026-08-30T05:30:38.688Z",
-  "total": 1100,
+  "updated": "2026-11-16T15:22:49.291Z",
+  "total": 1169,
   "cards": [
     {
       "n": "13 Treasures of Britain",
@@ -74,6 +74,36 @@
           "img": "",
           "flavor": "",
           "artist": "Seb McKinnon"
+        }
+      ]
+    },
+    {
+      "n": "A Yeti So Shy",
+      "el": "air",
+      "t": "minion",
+      "c": 3,
+      "pw": 4,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Stealth, Outerbound",
+      "ar": "Vincent Pompetti",
+      "th": "2a",
+      "sl": "008-a_yeti_so_shy-pd-s",
+      "sub": [
+        "Giant"
+      ],
+      "prints": [
+        {
+          "sl": "008-a_yeti_so_shy-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Vincent Pompetti"
         }
       ]
     },
@@ -456,8 +486,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "",
@@ -465,6 +496,15 @@
       "th": "2f",
       "sl": "006-active_volcano-b-s",
       "prints": [
+        {
+          "sl": "008-active_volcano-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-active_volcano-b-s",
           "set": "Gothic",
@@ -1027,8 +1067,9 @@
       "c": 5,
       "pw": 5,
       "r": "ordinary",
-      "s": "Promo",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Promo",
         "Beta",
         "Alpha"
@@ -1041,6 +1082,15 @@
         "Mortal"
       ],
       "prints": [
+        {
+          "sl": "008-amazon_warriors-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Elvira Shakirova"
+        },
         {
           "sl": "999-amazon_warriors-ai-f",
           "set": "Promo",
@@ -1240,6 +1290,33 @@
           "img": "",
           "flavor": "",
           "artist": "Lindsey Crummett"
+        }
+      ]
+    },
+    {
+      "n": "Ancient Thaw",
+      "el": "neutral",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Cast an @ Beast from your collection here, disabled until your next turn.",
+      "ar": "Michal Nagypál",
+      "th": "",
+      "sl": "008-ancient_thaw-pd-s",
+      "prints": [
+        {
+          "sl": "008-ancient_thaw-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Michal Nagypál"
         }
       ]
     },
@@ -1839,8 +1916,9 @@
       "c": 4,
       "pw": null,
       "r": "ordinary",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
       "txt": "Deal 4 damage to target nearby unit.",
@@ -1848,6 +1926,15 @@
       "th": "2a",
       "sl": "004-arc_lightning-b-s",
       "prints": [
+        {
+          "sl": "008-arc_lightning-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Vincent Pompetti"
+        },
         {
           "sl": "004-arc_lightning-b-s",
           "set": "Arthurian Legends",
@@ -2146,6 +2233,66 @@
       ]
     },
     {
+      "n": "Arctic Fox",
+      "el": "air",
+      "t": "minion",
+      "c": 1,
+      "pw": 1,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Stealth, Can't be disabled\n\n(1), Banish this from your cemetery → An ally gains \"Stealth, Can't be disabled.\"",
+      "ar": "Liz Danforth",
+      "th": "1a",
+      "sl": "008-arctic_fox-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-arctic_fox-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Liz Danforth"
+        }
+      ]
+    },
+    {
+      "n": "Aria Wraith",
+      "el": "air",
+      "t": "minion",
+      "c": 3,
+      "pw": 2,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Stealth\n\nBreak Stealth → Destroy all artifacts and disabled minions nearby.",
+      "ar": "Melissa A. Benson",
+      "th": "1a",
+      "sl": "008-aria_wraith-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-aria_wraith-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        }
+      ]
+    },
+    {
       "n": "Arid Desert",
       "el": "fire",
       "t": "site",
@@ -2314,6 +2461,33 @@
           "img": "",
           "flavor": "",
           "artist": "Mattias Frisk"
+        }
+      ]
+    },
+    {
+      "n": "Ash of Effort",
+      "el": "fire",
+      "t": "magic",
+      "c": 2,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Sacrifice a site to draw three sites.",
+      "ar": "Scott Kirschner",
+      "th": "2f",
+      "sl": "008-ash_of_effort-pd-s",
+      "prints": [
+        {
+          "sl": "008-ash_of_effort-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Scott Kirschner"
         }
       ]
     },
@@ -2861,6 +3035,33 @@
           "img": "",
           "flavor": "",
           "artist": "Séverine Pineaux"
+        }
+      ]
+    },
+    {
+      "n": "Avalanche",
+      "el": "air",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (2) → Snow flows forward, carrying and disabling surface units until your next turn.",
+      "ar": "Michal Nagypál",
+      "th": "1a",
+      "sl": "008-avalanche-pd-s",
+      "prints": [
+        {
+          "sl": "008-avalanche-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Michal Nagypál"
         }
       ]
     },
@@ -3962,6 +4163,37 @@
       ]
     },
     {
+      "n": "Bearserker",
+      "el": "water",
+      "t": "minion",
+      "c": 5,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "(W)(W) -- You may pay the difference in cost to transform a Mortal or Bear into Bearserker from hand, untapped.",
+      "ar": "Alan Pollack",
+      "th": "1w",
+      "sl": "008-bearserker-pd-s",
+      "sub": [
+        "Beast",
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-bearserker-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        }
+      ]
+    },
+    {
       "n": "Beast of Burden",
       "el": "fire",
       "t": "minion",
@@ -4802,8 +5034,9 @@
       "c": 3,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -4812,6 +5045,15 @@
       "th": "1f",
       "sl": "001-blaze-b-s",
       "prints": [
+        {
+          "sl": "008-blaze-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Elvira Shakirova"
+        },
         {
           "sl": "002-blaze-b-s",
           "set": "Beta",
@@ -5134,16 +5376,26 @@
       "c": 1,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
-      "txt": "Affected sites and units atop them can't be attacked or intercepted.\r\n\r\nAt the start of your turn, dispel Blizzard.",
+      "txt": "Affected sites and units atop them can't be attacked or intercepted.\n\nAt the start of your turn, dispel Blizzard.",
       "ar": "Jeff A. Menges",
       "th": "1w",
       "sl": "001-blizzard-b-s",
       "prints": [
+        {
+          "sl": "008-blizzard-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Jeff A. Menges"
+        },
         {
           "sl": "002-blizzard-b-s",
           "set": "Beta",
@@ -5475,8 +5727,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -5485,6 +5738,15 @@
       "th": "2f",
       "sl": "001-boil-b-s",
       "prints": [
+        {
+          "sl": "008-boil-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "002-boil-b-s",
           "set": "Beta",
@@ -6087,6 +6349,33 @@
           "img": "",
           "flavor": "",
           "artist": "Margaret Organ-Kean"
+        }
+      ]
+    },
+    {
+      "n": "Bouldermaw",
+      "el": "earth",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (6) → Roll a Rolling Boulder in your collection from here.",
+      "ar": "Dan Seagrave",
+      "th": "1e",
+      "sl": "008-bouldermaw-pd-s",
+      "prints": [
+        {
+          "sl": "008-bouldermaw-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Dan Seagrave"
         }
       ]
     },
@@ -6881,8 +7170,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -6891,6 +7181,15 @@
       "th": "1e",
       "sl": "001-bury-b-s",
       "prints": [
+        {
+          "sl": "008-bury-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Dan Seagrave"
+        },
         {
           "sl": "002-bury-b-s",
           "set": "Beta",
@@ -7051,8 +7350,9 @@
       "c": 6,
       "pw": null,
       "r": "elite",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Minions adjacent to target Water site step towards it. Then submerge all minions there.",
@@ -7060,6 +7360,15 @@
       "th": "3w",
       "sl": "006-call_of_the_sea-b-s",
       "prints": [
+        {
+          "sl": "008-call_of_the_sea-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "AronjaArt"
+        },
         {
           "sl": "006-call_of_the_sea-b-s",
           "set": "Gothic",
@@ -8070,6 +8379,33 @@
       ]
     },
     {
+      "n": "Chart",
+      "el": "earth",
+      "t": "magic",
+      "c": 2,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Draw two sites.",
+      "ar": "Francesca Baerald",
+      "th": "2e",
+      "sl": "008-chart-pd-s",
+      "prints": [
+        {
+          "sl": "008-chart-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
       "n": "Cherubim",
       "el": "fire",
       "t": "minion",
@@ -8651,6 +8987,33 @@
           "img": "",
           "flavor": "",
           "artist": "Jeff Easley"
+        }
+      ]
+    },
+    {
+      "n": "Combusting Busts",
+      "el": "fire",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (4) → Deal 3 damage to each unit at another target adjacent location.",
+      "ar": "Drew Tucker",
+      "th": "1f",
+      "sl": "008-combusting_busts-pd-s",
+      "prints": [
+        {
+          "sl": "008-combusting_busts-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
         }
       ]
     },
@@ -9391,11 +9754,12 @@
       "c": 3,
       "pw": 2,
       "r": "exceptional",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
-      "txt": "Submerge\r\n\r\nOnce on your turn, Coy Nixie may force target nearby enemy to take a step towards her. Tap that enemy if it is untapped.",
+      "txt": "Submerge\n\nOnce on your turn, Coy Nixie may force target nearby enemy to take a step towards her. Tap that enemy if it is untapped.",
       "ar": "Lindsey Crummett",
       "th": "2w",
       "sl": "004-coy_nixie-b-s",
@@ -9403,6 +9767,15 @@
         "Merfolk"
       ],
       "prints": [
+        {
+          "sl": "008-coy_nixie-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Lindsey Crummett"
+        },
         {
           "sl": "004-coy_nixie-b-s",
           "set": "Arthurian Legends",
@@ -10847,8 +11220,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "",
@@ -10856,6 +11230,15 @@
       "th": "2w",
       "sl": "006-deep_sea-b-s",
       "prints": [
+        {
+          "sl": "008-deep_sea-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-deep_sea-b-s",
           "set": "Gothic",
@@ -10873,6 +11256,33 @@
           "img": "",
           "flavor": "",
           "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
+      "n": "Deep Snow",
+      "el": "air",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (1) → Tap minions at one adjacent site. They don't untap the next time they would.",
+      "ar": "Jussi Pylkäs",
+      "th": "1a",
+      "sl": "008-deep_snow-pd-s",
+      "prints": [
+        {
+          "sl": "008-deep_snow-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
         }
       ]
     },
@@ -11534,8 +11944,9 @@
       "c": 2,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -11544,6 +11955,15 @@
       "th": "1a",
       "sl": "001-disenchant-b-s",
       "prints": [
+        {
+          "sl": "008-disenchant-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Elwira Pawlikowska"
+        },
         {
           "sl": "002-disenchant-b-s",
           "set": "Beta",
@@ -11644,17 +12064,27 @@
       "c": 2,
       "pw": null,
       "r": "ordinary",
-      "s": "Promo",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Promo",
         "Beta",
         "Alpha"
       ],
       "txt": "Destroy all auras and artifacts at target location up to two steps away.",
-      "ar": "Margaret Organ-Kean",
+      "ar": "Elwira Pawlikowska",
       "th": "1e",
       "sl": "001-dispel-b-s",
       "prints": [
+        {
+          "sl": "008-dispel-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Elwira Pawlikowska"
+        },
         {
           "sl": "999-dispel-op-s",
           "set": "Promo",
@@ -11718,8 +12148,9 @@
       "c": 2,
       "pw": null,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Teleport target minion, artifact, or aura one diagonal step.",
@@ -11727,6 +12158,15 @@
       "th": "2a",
       "sl": "006-displace-b-s",
       "prints": [
+        {
+          "sl": "008-displace-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "David O'Connor"
+        },
         {
           "sl": "006-displace-b-s",
           "set": "Gothic",
@@ -12736,8 +13176,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -12746,6 +13187,15 @@
       "th": "1w",
       "sl": "001-drown-b-s",
       "prints": [
+        {
+          "sl": "008-drown-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        },
         {
           "sl": "002-drown-b-s",
           "set": "Beta",
@@ -13000,6 +13450,36 @@
       ]
     },
     {
+      "n": "Dust Devil",
+      "el": "fire",
+      "t": "minion",
+      "c": 3,
+      "pw": 2,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Movement +1\n\nTakes no damage while attacking.",
+      "ar": "Lindsey Crummett",
+      "th": "2f",
+      "sl": "008-dust_devil-pd-s",
+      "sub": [
+        "Demon"
+      ],
+      "prints": [
+        {
+          "sl": "008-dust_devil-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Lindsey Crummett"
+        }
+      ]
+    },
+    {
       "n": "Dwarven Digging Team",
       "el": "earth",
       "t": "minion",
@@ -13158,8 +13638,9 @@
       "c": 5,
       "pw": null,
       "r": "elite",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -13168,6 +13649,15 @@
       "th": "2e",
       "sl": "001-earthquake-b-s",
       "prints": [
+        {
+          "sl": "008-earthquake-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        },
         {
           "sl": "002-earthquake-b-s",
           "set": "Beta",
@@ -13531,6 +14021,36 @@
           "img": "",
           "flavor": "",
           "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
+      "n": "Emberleaf Dryad",
+      "el": "earth",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Play a site from the top of your atlas to an adjacent Rubble.",
+      "ar": "Elwira Pawlikowska",
+      "th": "1e 1f",
+      "sl": "008-emberleaf_dryad-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-emberleaf_dryad-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Elwira Pawlikowska"
         }
       ]
     },
@@ -14428,8 +14948,9 @@
       "c": 4,
       "pw": 4,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Can't be targeted or damaged by magic.",
@@ -14440,6 +14961,15 @@
         "Monster"
       ],
       "prints": [
+        {
+          "sl": "008-failed_mutation-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        },
         {
           "sl": "006-failed_mutation-b-s",
           "set": "Gothic",
@@ -14941,8 +15471,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "",
@@ -14950,6 +15481,15 @@
       "th": "2e",
       "sl": "006-fertile_earth-b-s",
       "prints": [
+        {
+          "sl": "008-fertile_earth-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-fertile_earth-b-s",
           "set": "Gothic",
@@ -14977,12 +15517,13 @@
       "c": 3,
       "pw": 1,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
-      "txt": "May be summoned to any site.\r\n\r\nGenesis → You may return a minion here to its owner’s hand.",
+      "txt": "May be summoned to any site.\n\nGenesis → You may return a minion here to its owner’s hand.",
       "ar": "Drew Tucker",
       "th": "1w",
       "sl": "001-fey_changeling-b-s",
@@ -14990,6 +15531,15 @@
         "Faerie"
       ],
       "prints": [
+        {
+          "sl": "008-fey_changeling-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
+        },
         {
           "sl": "002-fey_changeling-b-s",
           "set": "Beta",
@@ -15298,16 +15848,26 @@
       "c": 4,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
-      "txt": "Shoot a projectile. It deals 4 damage on impact, and 2 damage to each other unit at that location.",
+      "txt": "Shoot a projectile. It explodes on impact, dealing damage to each unit at affected locations.",
       "ar": "Doug Kovacs",
       "th": "2f",
       "sl": "001-fireball-b-s",
       "prints": [
+        {
+          "sl": "008-fireball-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Doug Kovacs"
+        },
         {
           "sl": "002-fireball-b-s",
           "set": "Beta",
@@ -15597,8 +16157,9 @@
       "c": 6,
       "pw": null,
       "r": "elite",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -15607,6 +16168,15 @@
       "th": "2f",
       "sl": "001-flame_wave-b-s",
       "prints": [
+        {
+          "sl": "008-flame_wave-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        },
         {
           "sl": "002-flame_wave-b-s",
           "set": "Beta",
@@ -15688,6 +16258,36 @@
           "img": "",
           "flavor": "",
           "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
+      "n": "Flametongue Newt",
+      "el": "fire",
+      "t": "minion",
+      "c": 2,
+      "pw": 1,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Once on your turn, may just for fun, shoot a projectile that deals damage 1.",
+      "ar": "Séverine Pineaux",
+      "th": "2f",
+      "sl": "008-flametongue_newt-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-flametongue_newt-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Séverine Pineaux"
         }
       ]
     },
@@ -15844,14 +16444,45 @@
       ]
     },
     {
+      "n": "Flat Realm Society",
+      "el": "earth",
+      "t": "minion",
+      "c": 3,
+      "pw": 3,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Stealth\n\nEdges of the realm can't be connected, crossed, or shifted.",
+      "ar": "Séverine Pineaux",
+      "th": "2e",
+      "sl": "008-flat_realm_society-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-flat_realm_society-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Séverine Pineaux"
+        }
+      ]
+    },
+    {
       "n": "Flayer",
       "el": "fire",
       "t": "minion",
       "c": 4,
       "pw": 3,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Genesis → Deal 1 damage to each other nearby unit.",
@@ -15862,6 +16493,15 @@
         "Demon"
       ],
       "prints": [
+        {
+          "sl": "008-flayer-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
+        },
         {
           "sl": "006-flayer-b-s",
           "set": "Gothic",
@@ -16790,6 +17430,90 @@
       ]
     },
     {
+      "n": "Frost Breath",
+      "el": "water",
+      "t": "magic",
+      "c": 4,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "May be cast by a Beast or Spirit. Each unit at affected locations takes damage and is disabled until your next turn.",
+      "ar": "Truitt Parrish",
+      "th": "2w",
+      "sl": "008-frost_breath-pd-s",
+      "prints": [
+        {
+          "sl": "008-frost_breath-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
+        }
+      ]
+    },
+    {
+      "n": "Frost Elemental",
+      "el": "air",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Air and Water Spellcaster\n\nGenesis → Disable target adjacent unit until your next turn.",
+      "ar": "Brian Smith",
+      "th": "2a 2w",
+      "sl": "008-frost_elemental-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-frost_elemental-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
+      "n": "Frost Mage",
+      "el": "neutral",
+      "t": "avatar",
+      "c": null,
+      "pw": 1,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Tap → Play or draw a site.\n\n(A)(A)(W)(W), (2), Once on your turn → Encase target nearby minion in ice. It is disabled and takes no damage until your next turn.",
+      "ar": "Melissa A. Benson",
+      "th": "",
+      "sl": "008-frost_mage-pd-s",
+      "prints": [
+        {
+          "sl": "008-frost_mage-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        }
+      ]
+    },
+    {
       "n": "Frost Nova",
       "el": "water",
       "t": "magic",
@@ -16845,17 +17569,45 @@
       ]
     },
     {
+      "n": "Frostbolt",
+      "el": "air",
+      "t": "magic",
+      "c": 3,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Shoot a 3-damage projectile. On impact, all adjacent units are disabled until your next turn.",
+      "ar": "Elwira Pawlikowska",
+      "th": "1a 1w",
+      "sl": "008-frostbolt-pd-s",
+      "prints": [
+        {
+          "sl": "008-frostbolt-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Elwira Pawlikowska"
+        }
+      ]
+    },
+    {
       "n": "Frozen Horror",
       "el": "water",
       "t": "minion",
       "c": 5,
       "pw": 3,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
-      "txt": "Stealth\r\n\r\nBreak Stealth → Disable other nearby minions until your next turn.",
+      "txt": "Stealth\n\nBreak Stealth → Disable other nearby minions until your next turn.",
       "ar": "Melissa A. Benson",
       "th": "2w",
       "sl": "006-frozen_horror-b-s",
@@ -16863,6 +17615,15 @@
         "Undead"
       ],
       "prints": [
+        {
+          "sl": "008-frozen_horror-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        },
         {
           "sl": "006-frozen_horror-b-s",
           "set": "Gothic",
@@ -16880,6 +17641,36 @@
           "img": "",
           "flavor": "",
           "artist": "Melissa A. Benson"
+        }
+      ]
+    },
+    {
+      "n": "Full-tilt Goliaths",
+      "el": "air",
+      "t": "minion",
+      "c": 7,
+      "pw": 5,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Charge\n\nGenesis → Cover nearby sites with silencing snow until your next turn.",
+      "ar": "Rodney Matthews",
+      "th": "2a",
+      "sl": "008-full_tilt_goliaths-pd-s",
+      "sub": [
+        "Giant"
+      ],
+      "prints": [
+        {
+          "sl": "008-full_tilt_goliaths-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Rodney Matthews"
         }
       ]
     },
@@ -17479,8 +18270,9 @@
       "c": 2,
       "pw": null,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Give an allied minion Lethal this turn. Draw a spell.",
@@ -17488,6 +18280,15 @@
       "th": "2f",
       "sl": "006-gift_of_the_serpent-b-s",
       "prints": [
+        {
+          "sl": "008-gift_of_the_serpent-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Elwira Pawlikowska"
+        },
         {
           "sl": "006-gift_of_the_serpent-b-s",
           "set": "Gothic",
@@ -17765,6 +18566,36 @@
           "img": "",
           "flavor": "",
           "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
+      "n": "Gnarled Laborers",
+      "el": "fire",
+      "t": "minion",
+      "c": 3,
+      "pw": 3,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Untaps the first time they take damage each turn.",
+      "ar": "Paul Carrick",
+      "th": "1f",
+      "sl": "008-gnarled_laborers-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-gnarled_laborers-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Paul Carrick"
         }
       ]
     },
@@ -19020,6 +19851,33 @@
       ]
     },
     {
+      "n": "Ground Slam",
+      "el": "earth",
+      "t": "magic",
+      "c": 4,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "An ally strikes its site. Deal 2 damage to other units at nearby sites.",
+      "ar": "Alan Pollack",
+      "th": "1e 1f",
+      "sl": "008-ground_slam-pd-s",
+      "prints": [
+        {
+          "sl": "008-ground_slam-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        }
+      ]
+    },
+    {
       "n": "Guardian Angel",
       "el": "earth",
       "t": "minion",
@@ -19279,6 +20137,36 @@
       ]
     },
     {
+      "n": "Hailstriker",
+      "el": "air",
+      "t": "minion",
+      "c": 4,
+      "pw": 3,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Ranged\n\nGenesis → Target an adjacent location. Each minion there takes 1 damage and is disabled until your next turn.",
+      "ar": "Zohn Dee",
+      "th": "1a 1w",
+      "sl": "008-hailstriker-pd-s",
+      "sub": [
+        "Demon"
+      ],
+      "prints": [
+        {
+          "sl": "008-hailstriker-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Zohn Dee"
+        }
+      ]
+    },
+    {
       "n": "Hamlet",
       "el": "neutral",
       "t": "site",
@@ -19321,15 +20209,25 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
-      "txt": "Conjure atop an Ordinary or Exceptional site.\r\n\r\nAt the start of your turn, destroy this site, and minions atop it, and Hamlet's Ablaze.",
+      "txt": "Conjure atop an Ordinary or Exceptional site.\n\nAt the start of your turn, destroy this site, and minions atop it, and Hamlet's Ablaze.",
       "ar": "Jussi Pylkäs",
       "th": "2f",
       "sl": "004-hamlets_ablaze-b-s",
       "prints": [
+        {
+          "sl": "008-hamlets_ablaze-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
+        },
         {
           "sl": "004-hamlets_ablaze-b-s",
           "set": "Arthurian Legends",
@@ -19763,8 +20661,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -19773,6 +20672,15 @@
       "th": "1f",
       "sl": "001-heat_ray-b-s",
       "prints": [
+        {
+          "sl": "008-heat_ray-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Jeff Easley"
+        },
         {
           "sl": "002-heat_ray-b-s",
           "set": "Beta",
@@ -19890,8 +20798,9 @@
       "c": 3,
       "pw": 3,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "",
@@ -19902,6 +20811,15 @@
         "Demon"
       ],
       "prints": [
+        {
+          "sl": "008-hellhounds-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Mattias Frisk"
+        },
         {
           "sl": "006-hellhounds-b-s",
           "set": "Gothic",
@@ -20193,14 +21111,75 @@
       ]
     },
     {
+      "n": "Hibernal Legion",
+      "el": "water",
+      "t": "minion",
+      "c": 6,
+      "pw": 5,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "At the end of your turn, freeze this site and other minions here. They're disabled until the Legion leaves the realm.",
+      "ar": "Dan Seagrave",
+      "th": "3w",
+      "sl": "008-hibernal_legion-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-hibernal_legion-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Dan Seagrave"
+        }
+      ]
+    },
+    {
+      "n": "Highgate Guide",
+      "el": "air",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Nearby allies are Protected from sites.",
+      "ar": "Mattias Frisk",
+      "th": "1a",
+      "sl": "008-highgate_guide-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-highgate_guide-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Mattias Frisk"
+        }
+      ]
+    },
+    {
       "n": "Highland Clansmen",
       "el": "air",
       "t": "minion",
       "c": 7,
       "pw": 5,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -20212,6 +21191,15 @@
         "Mortal"
       ],
       "prints": [
+        {
+          "sl": "008-highland_clansmen-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
+        },
         {
           "sl": "002-highland_clansmen-b-s",
           "set": "Beta",
@@ -21068,6 +22056,33 @@
       ]
     },
     {
+      "n": "Humming Hummocks",
+      "el": "earth",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Until your next turn, nearby allies are Protected from all but units.",
+      "ar": "Jeff A. Menges",
+      "th": "1e",
+      "sl": "008-humming_hummocks-pd-s",
+      "prints": [
+        {
+          "sl": "008-humming_hummocks-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Jeff A. Menges"
+        }
+      ]
+    },
+    {
       "n": "Hunter's Lodge",
       "el": "earth",
       "t": "site",
@@ -21321,8 +22336,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Shoot three projectiles, one at a time. Each deals 1 damage but melts before the third step.",
@@ -21330,6 +22346,15 @@
       "th": "1w",
       "sl": "006-ice_shards-b-s",
       "prints": [
+        {
+          "sl": "008-ice_shards-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-ice_shards-b-s",
           "set": "Gothic",
@@ -21402,6 +22427,33 @@
           "img": "",
           "flavor": "",
           "artist": "Ian Miller"
+        }
+      ]
+    },
+    {
+      "n": "Icicle Dome",
+      "el": "air",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (1) → Destroy target adjacent disabled or immobile minion.",
+      "ar": "Brian Smith",
+      "th": "1a",
+      "sl": "008-icicle_dome-pd-s",
+      "prints": [
+        {
+          "sl": "008-icicle_dome-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
         }
       ]
     },
@@ -22173,8 +23225,9 @@
       "c": 4,
       "pw": 3,
       "r": "exceptional",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
       "txt": "Can't be disabled or moved by force.",
@@ -22185,6 +23238,15 @@
         "Automaton"
       ],
       "prints": [
+        {
+          "sl": "008-iron_man_talus-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
+        },
         {
           "sl": "004-iron_man_talus-b-s",
           "set": "Arthurian Legends",
@@ -22450,6 +23512,36 @@
       ]
     },
     {
+      "n": "Jormungand",
+      "el": "water",
+      "t": "minion",
+      "c": 7,
+      "pw": 10,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Occupies all outer locations safely, and can't be modified.",
+      "ar": "Truitt Parrish",
+      "th": "3w",
+      "sl": "008-jormungand-pd-s",
+      "sub": [
+        "Monster"
+      ],
+      "prints": [
+        {
+          "sl": "008-jormungand-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
+        }
+      ]
+    },
+    {
       "n": "Joust!",
       "el": "fire",
       "t": "magic",
@@ -22518,6 +23610,36 @@
           "img": "",
           "flavor": "",
           "artist": "Elwira Pawlikowska"
+        }
+      ]
+    },
+    {
+      "n": "Jussi Puffins",
+      "el": "air",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Airborne, Submerge\n\nCan move as if the opposite edges of the realm were connected.",
+      "ar": "Jussi Pylkäs",
+      "th": "1a 1w",
+      "sl": "008-jussi_puffins-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-jussi_puffins-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
         }
       ]
     },
@@ -22896,6 +24018,36 @@
           "img": "",
           "flavor": "",
           "artist": "Melissa A. Benson"
+        }
+      ]
+    },
+    {
+      "n": "King Krakalak",
+      "el": "fire",
+      "t": "minion",
+      "c": 8,
+      "pw": 8,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Sacrifice this site to deal damage to each other unit at affected sites:",
+      "ar": "Francesca Baerald",
+      "th": "3f",
+      "sl": "008-king_krakalak-pd-s",
+      "sub": [
+        "Demon"
+      ],
+      "prints": [
+        {
+          "sl": "008-king_krakalak-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Francesca Baerald"
         }
       ]
     },
@@ -23692,8 +24844,9 @@
       "c": 3,
       "pw": null,
       "r": "ordinary",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Draw a site. You may play a land site.",
@@ -23701,6 +24854,15 @@
       "th": "2e",
       "sl": "006-landmass-b-s",
       "prints": [
+        {
+          "sl": "008-landmass-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-landmass-b-s",
           "set": "Gothic",
@@ -23718,6 +24880,33 @@
           "img": "",
           "flavor": "",
           "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
+      "n": "Landslide",
+      "el": "earth",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (2) → Swap this site with another adjacent site.",
+      "ar": "Drew Tucker",
+      "th": "1e",
+      "sl": "008-landslide-pd-s",
+      "prints": [
+        {
+          "sl": "008-landslide-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
         }
       ]
     },
@@ -23758,14 +24947,45 @@
       ]
     },
     {
+      "n": "Lava Elemental",
+      "el": "earth",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Earth and Fire Spellcaster\n\nGenesis → Deal 2 damage to target adjacent unit.",
+      "ar": "Brian Smith",
+      "th": "2e 2f",
+      "sl": "008-lava_elemental-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-lava_elemental-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
       "n": "Lava Flow",
       "el": "fire",
       "t": "magic",
       "c": 5,
       "pw": null,
       "r": "exceptional",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
       "txt": "Lava flows from the caster's site in a cardinal direction. Deal damage to each other unit occupying a site in the area of effect:",
@@ -23773,6 +24993,15 @@
       "th": "2f",
       "sl": "004-lava_flow-b-s",
       "prints": [
+        {
+          "sl": "008-lava_flow-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Caio Calazans"
+        },
         {
           "sl": "004-lava_flow-b-s",
           "set": "Arthurian Legends",
@@ -23845,6 +25074,33 @@
           "set": "Alpha",
           "finish": "Foil",
           "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        }
+      ]
+    },
+    {
+      "n": "Lavamancer",
+      "el": "neutral",
+      "t": "avatar",
+      "c": null,
+      "pw": 1,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Tap → Play or draw a site.\n\n(E)(E)(F)(F), (3) → Pull apart a partial row or column, filling the resulting void with Rubble that deals 1 damage to minions near it.",
+      "ar": "Melissa A. Benson",
+      "th": "",
+      "sl": "008-lavamancer-pd-s",
+      "prints": [
+        {
+          "sl": "008-lavamancer-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
           "img": "",
           "flavor": "",
           "artist": "Melissa A. Benson"
@@ -24135,8 +25391,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -24145,6 +25402,15 @@
       "th": "1a 1w",
       "sl": "001-lighthouse-b-s",
       "prints": [
+        {
+          "sl": "008-lighthouse-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Marta Molina"
+        },
         {
           "sl": "002-lighthouse-b-s",
           "set": "Beta",
@@ -24190,8 +25456,9 @@
       "c": 2,
       "pw": null,
       "r": "ordinary",
-      "s": "Promo",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Promo",
         "Beta",
         "Alpha"
@@ -24201,6 +25468,15 @@
       "th": "1a",
       "sl": "001-lightning_bolt-b-s",
       "prints": [
+        {
+          "sl": "008-lightning_bolt-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Ossi Hiekkala"
+        },
         {
           "sl": "999-lightning_bolt-tc-f",
           "set": "Promo",
@@ -24388,6 +25664,36 @@
           "img": "",
           "flavor": "",
           "artist": "Michal Nagypál"
+        }
+      ]
+    },
+    {
+      "n": "Lone Wolf",
+      "el": "air",
+      "t": "minion",
+      "c": 3,
+      "pw": 3,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Stealth\n\nCan and must be cast to any location without allies nearby.",
+      "ar": "Truitt Parrish",
+      "th": "1a",
+      "sl": "008-lone_wolf-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-lone_wolf-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
         }
       ]
     },
@@ -25565,6 +26871,33 @@
           "img": "",
           "flavor": "",
           "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
+      "n": "Man-made Ice Age",
+      "el": "water",
+      "t": "aura",
+      "c": 6,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Minions and artifacts atop affected sites are disabled.",
+      "ar": "Jussi Pylkäs",
+      "th": "3w",
+      "sl": "008-man_made_ice_age-pd-s",
+      "prints": [
+        {
+          "sl": "008-man_made_ice_age-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
         }
       ]
     },
@@ -27343,8 +28676,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "(F)(F) — Genesis → You may cast a Hellhounds from your collection to this site.",
@@ -27352,6 +28686,15 @@
       "th": "1f",
       "sl": "006-molten_maar-b-s",
       "prints": [
+        {
+          "sl": "008-molten_maar-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Pedro Ferreira"
+        },
         {
           "sl": "006-molten_maar-b-s",
           "set": "Gothic",
@@ -28085,8 +29428,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -28095,6 +29439,15 @@
       "th": "1a",
       "sl": "001-mountain_pass-b-s",
       "prints": [
+        {
+          "sl": "008-mountain_pass-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Marta Molina"
+        },
         {
           "sl": "002-mountain_pass-b-s",
           "set": "Beta",
@@ -28140,8 +29493,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "",
@@ -28149,6 +29503,15 @@
       "th": "2a",
       "sl": "006-mountain_peaks-b-s",
       "prints": [
+        {
+          "sl": "008-mountain_peaks-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        },
         {
           "sl": "006-mountain_peaks-b-s",
           "set": "Gothic",
@@ -28472,6 +29835,36 @@
       ]
     },
     {
+      "n": "Myrmidons",
+      "el": "earth",
+      "t": "minion",
+      "c": 6,
+      "pw": 0,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Burrowing\n\nHas +1 power for each site in their span of land.",
+      "ar": "Francesca Baerald",
+      "th": "3e",
+      "sl": "008-myrmidons-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-myrmidons-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
       "n": "Myrrh's Trophy Room",
       "el": "neutral",
       "t": "site",
@@ -28543,6 +29936,66 @@
           "img": "",
           "flavor": "",
           "artist": "Heidi Taillefer"
+        }
+      ]
+    },
+    {
+      "n": "Namira Cheetah",
+      "el": "fire",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Movement +3",
+      "ar": "Elvira Shakirova",
+      "th": "1f",
+      "sl": "008-namira_cheetah-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-namira_cheetah-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Elvira Shakirova"
+        }
+      ]
+    },
+    {
+      "n": "Nanurluk",
+      "el": "water",
+      "t": "minion",
+      "c": 6,
+      "pw": 6,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Has Charge if there are Bears or sites in your cemetery.",
+      "ar": "Brian Smith",
+      "th": "3w",
+      "sl": "008-nanurluk-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-nanurluk-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
         }
       ]
     },
@@ -28978,6 +30431,33 @@
           "img": "",
           "flavor": "",
           "artist": "David O'Connor"
+        }
+      ]
+    },
+    {
+      "n": "None Survive the Sun",
+      "el": "fire",
+      "t": "aura",
+      "c": 6,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "At the end of each turn, minions on the surface burn. Those here take 20 damage, those elsewhere take 1. Then the sun moves one step westward, or it is dispelled.",
+      "ar": "Jussi Pylkäs",
+      "th": "3f",
+      "sl": "008-none_survive_the_sun-pd-s",
+      "prints": [
+        {
+          "sl": "008-none_survive_the_sun-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
         }
       ]
     },
@@ -30490,6 +31970,36 @@
       ]
     },
     {
+      "n": "Pass-plug Serpent",
+      "el": "earth",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Burrowing\n\nWhenever an enemy enters the surface of a nearby allied site, if the Serpent is underground, it may unburrow there.",
+      "ar": "Rodney Matthews",
+      "th": "2e",
+      "sl": "008-pass_plug_serpent-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-pass_plug_serpent-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Rodney Matthews"
+        }
+      ]
+    },
+    {
       "n": "Pathfinder",
       "el": "neutral",
       "t": "avatar",
@@ -31058,6 +32568,33 @@
           "img": "",
           "flavor": "",
           "artist": "Elwira Pawlikowska"
+        }
+      ]
+    },
+    {
+      "n": "Permafrost",
+      "el": "water",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Disable effects on minions here are permanent, but are removed if they leave.",
+      "ar": "Zohn Dee",
+      "th": "1w",
+      "sl": "008-permafrost-pd-s",
+      "prints": [
+        {
+          "sl": "008-permafrost-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Zohn Dee"
         }
       ]
     },
@@ -32000,8 +33537,9 @@
       "c": 3,
       "pw": 3,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -32013,6 +33551,15 @@
         "Beast"
       ],
       "prints": [
+        {
+          "sl": "008-plumed_pegasus-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        },
         {
           "sl": "002-plumed_pegasus-b-s",
           "set": "Beta",
@@ -32262,11 +33809,12 @@
       "n": "Polar Bears",
       "el": "water",
       "t": "minion",
-      "c": 2,
-      "pw": 2,
+      "c": 3,
+      "pw": 3,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -32278,6 +33826,15 @@
         "Beast"
       ],
       "prints": [
+        {
+          "sl": "008-polar_bears-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
+        },
         {
           "sl": "002-polar_bears-b-s",
           "set": "Beta",
@@ -32371,6 +33928,33 @@
           "img": "",
           "flavor": "",
           "artist": "Marta Molina"
+        }
+      ]
+    },
+    {
+      "n": "Polar Shift",
+      "el": "air",
+      "t": "magic",
+      "c": 3,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Shift the realm north or south, moving all sites one step as if the top and bottom edges were connected. Draw a spell.",
+      "ar": "Emil Idzikowski",
+      "th": "2a 2w",
+      "sl": "008-polar_shift-pd-s",
+      "prints": [
+        {
+          "sl": "008-polar_shift-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Emil Idzikowski"
         }
       ]
     },
@@ -34182,6 +35766,36 @@
       ]
     },
     {
+      "n": "Reed Cord Measurer",
+      "el": "earth",
+      "t": "minion",
+      "c": 3,
+      "pw": 1,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Play or draw a site.",
+      "ar": "Pedro Ferreira",
+      "th": "1e",
+      "sl": "008-reed_cord_measurer-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-reed_cord_measurer-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Pedro Ferreira"
+        }
+      ]
+    },
+    {
       "n": "Regurgitator",
       "el": "water",
       "t": "minion",
@@ -34472,6 +36086,33 @@
           "img": "",
           "flavor": "",
           "artist": "Ossi Hiekkala"
+        }
+      ]
+    },
+    {
+      "n": "Research",
+      "el": "air",
+      "t": "magic",
+      "c": 3,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Draw two spells.",
+      "ar": "Pedro Ferreira",
+      "th": "2a",
+      "sl": "008-research-pd-s",
+      "prints": [
+        {
+          "sl": "008-research-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Pedro Ferreira"
         }
       ]
     },
@@ -35027,6 +36668,33 @@
       ]
     },
     {
+      "n": "Rite of Eruption",
+      "el": "earth",
+      "t": "aura",
+      "c": 5,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Conjure to a single site. At the start of your turn, deal damage to each unit at affected sites, then destroy everything in this square.",
+      "ar": "Mattias Frisk",
+      "th": "2e 2f",
+      "sl": "008-rite_of_eruption-pd-s",
+      "prints": [
+        {
+          "sl": "008-rite_of_eruption-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Mattias Frisk"
+        }
+      ]
+    },
+    {
       "n": "River of Blood",
       "el": "fire",
       "t": "site",
@@ -35143,8 +36811,9 @@
       "c": null,
       "pw": null,
       "r": "elite",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Once on your turn, you may push a minion on connected Rivers one step.",
@@ -35152,6 +36821,15 @@
       "th": "1w",
       "sl": "006-river_rapids-b-s",
       "prints": [
+        {
+          "sl": "008-river_rapids-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Vasiliy Ermolaev"
+        },
         {
           "sl": "006-river_rapids-b-s",
           "set": "Gothic",
@@ -35273,8 +36951,9 @@
       "c": 4,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -35286,6 +36965,15 @@
         "Relic"
       ],
       "prints": [
+        {
+          "sl": "008-rolling_boulder-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
+        },
         {
           "sl": "002-rolling_boulder-b-s",
           "set": "Beta",
@@ -35541,8 +37229,9 @@
       "c": null,
       "pw": null,
       "r": "ordinary",
-      "s": "Promo",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Promo",
         "Gothic",
         "Arthurian Legends",
@@ -35550,10 +37239,19 @@
         "Alpha"
       ],
       "txt": "Provides no mana.",
-      "ar": "Elwira Pawlikowska",
+      "ar": "Alan Pollack",
       "th": "",
       "sl": "001-rubble-bt-s",
       "prints": [
+        {
+          "sl": "008-rubble-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
+        },
         {
           "sl": "999-rubble-d-f",
           "set": "Promo",
@@ -35769,6 +37467,36 @@
           "img": "",
           "flavor": "",
           "artist": "Frank Frazetta"
+        }
+      ]
+    },
+    {
+      "n": "Runeling",
+      "el": "air",
+      "t": "minion",
+      "c": 2,
+      "pw": 1,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Spellcaster\n\nGenesis → Draws his own spell, which only he can cast.",
+      "ar": "Pedro Ferreira",
+      "th": "1a",
+      "sl": "008-runeling-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-runeling-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Pedro Ferreira"
         }
       ]
     },
@@ -36660,6 +38388,33 @@
           "img": "",
           "flavor": "",
           "artist": "Dan Seagrave"
+        }
+      ]
+    },
+    {
+      "n": "Scoria",
+      "el": "neutral",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Your (E) and (F) are equal to the higher of the two.",
+      "ar": "Mark Poole",
+      "th": "",
+      "sl": "008-scoria-pd-s",
+      "prints": [
+        {
+          "sl": "008-scoria-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Mark Poole"
         }
       ]
     },
@@ -37915,6 +39670,33 @@
       ]
     },
     {
+      "n": "Shatter",
+      "el": "air",
+      "t": "magic",
+      "c": 1,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Destroy a nearby target artifact or disabled minion.",
+      "ar": "Jussi Pylkäs",
+      "th": "1a",
+      "sl": "008-shatter-pd-s",
+      "prints": [
+        {
+          "sl": "008-shatter-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
+        }
+      ]
+    },
+    {
       "n": "Shatter Strike",
       "el": "fire",
       "t": "magic",
@@ -38751,8 +40533,9 @@
       "c": null,
       "pw": null,
       "r": "elite",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -38761,6 +40544,15 @@
       "th": "",
       "sl": "001-sinkhole-b-s",
       "prints": [
+        {
+          "sl": "008-sinkhole-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Michal Nagypál"
+        },
         {
           "sl": "002-sinkhole-b-s",
           "set": "Beta",
@@ -38806,8 +40598,9 @@
       "c": 2,
       "pw": 2,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Genesis -> Target adjacent site is silenced and provides no threshold while Sinterfee is in the realm.",
@@ -38818,6 +40611,15 @@
         "Faerie"
       ],
       "prints": [
+        {
+          "sl": "008-sinterfee-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Brom"
+        },
         {
           "sl": "006-sinterfee-b-s",
           "set": "Gothic",
@@ -39794,6 +41596,36 @@
       ]
     },
     {
+      "n": "Sissi Marksmen",
+      "el": "air",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Ranged\n\nMay shoot across the top and bottom edges of the realm.",
+      "ar": "Truitt Parrish",
+      "th": "2a",
+      "sl": "008-sissi_marksmen-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-sissi_marksmen-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
+        }
+      ]
+    },
+    {
       "n": "Sister Stefánia",
       "el": "earth",
       "t": "minion",
@@ -40167,6 +41999,36 @@
       ]
     },
     {
+      "n": "Slag Slug",
+      "el": "earth",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Whenever the Slug leaves a site, it deals 2 damage to units there.",
+      "ar": "Lindsey Crummett",
+      "th": "1e 1f",
+      "sl": "008-slag_slug-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-slag_slug-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Lindsey Crummett"
+        }
+      ]
+    },
+    {
       "n": "Sleep",
       "el": "water",
       "t": "magic",
@@ -40218,6 +42080,33 @@
           "img": "",
           "flavor": "",
           "artist": "Séverine Pineaux"
+        }
+      ]
+    },
+    {
+      "n": "Slide",
+      "el": "air",
+      "t": "magic",
+      "c": 2,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Slide an ally or disabled enemy as far as possible in a cardinal direction. Draw a spell.",
+      "ar": "Paul Carrick",
+      "th": "2a",
+      "sl": "008-slide-pd-s",
+      "prints": [
+        {
+          "sl": "008-slide-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Paul Carrick"
         }
       ]
     },
@@ -40364,8 +42253,9 @@
       "c": 3,
       "pw": 5,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -40377,6 +42267,15 @@
         "Giant"
       ],
       "prints": [
+        {
+          "sl": "008-slumbering_giantess-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Liz Danforth"
+        },
         {
           "sl": "002-slumbering_giantess-b-s",
           "set": "Beta",
@@ -40546,6 +42445,33 @@
       ]
     },
     {
+      "n": "Smoldering Hollow",
+      "el": "fire",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → Damage dealt to nearby units is increased by 1 this turn.",
+      "ar": "Brian Smith",
+      "th": "1f",
+      "sl": "008-smoldering_hollow-pd-s",
+      "prints": [
+        {
+          "sl": "008-smoldering_hollow-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Brian Smith"
+        }
+      ]
+    },
+    {
       "n": "Snallygaster",
       "el": "air",
       "t": "minion",
@@ -40581,6 +42507,36 @@
           "img": "",
           "flavor": "",
           "artist": "Brom"
+        }
+      ]
+    },
+    {
+      "n": "Snapjaw Raptor",
+      "el": "fire",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Charge, Stealth",
+      "ar": "Alan Pollack",
+      "th": "2f",
+      "sl": "008-snapjaw_raptor-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-snapjaw_raptor-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Alan Pollack"
         }
       ]
     },
@@ -40707,8 +42663,9 @@
       "c": 5,
       "pw": null,
       "r": "exceptional",
-      "s": "Arthurian Legends",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Arthurian Legends"
       ],
       "txt": "Shoot a piercing projectile. It picks up all other units along its path and carries them with it. When it stops, units there take damage equal to the number of units in the snowball.",
@@ -40716,6 +42673,15 @@
       "th": "2w",
       "sl": "004-snowball-b-s",
       "prints": [
+        {
+          "sl": "008-snowball-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
+        },
         {
           "sl": "004-snowball-b-s",
           "set": "Arthurian Legends",
@@ -40879,6 +42845,36 @@
           "img": "",
           "flavor": "",
           "artist": "Francesca Baerald"
+        }
+      ]
+    },
+    {
+      "n": "Southpaw Dyrodor",
+      "el": "earth",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Tap → Dyrodor swings its tail left to right, dealing damage to each unit at affected locations.",
+      "ar": "Melissa A. Benson",
+      "th": "2e",
+      "sl": "008-southpaw_dyrodor-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-southpaw_dyrodor-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
         }
       ]
     },
@@ -41237,6 +43233,33 @@
       ]
     },
     {
+      "n": "Spike Trap",
+      "el": "earth",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (1) → Deal 3 damage to a unit here.",
+      "ar": "Bryon Wackwitz",
+      "th": "1e",
+      "sl": "008-spike_trap-pd-s",
+      "prints": [
+        {
+          "sl": "008-spike_trap-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Bryon Wackwitz"
+        }
+      ]
+    },
+    {
       "n": "Spin Attack",
       "el": "fire",
       "t": "magic",
@@ -41486,6 +43509,33 @@
           "img": "",
           "flavor": "",
           "artist": "Matt Tames"
+        }
+      ]
+    },
+    {
+      "n": "Springstem Meadow",
+      "el": "air",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (1) → Fling a unit atop this site onto a nearby site.",
+      "ar": "Scott Kirschner",
+      "th": "1a",
+      "sl": "008-springstem_meadow-pd-s",
+      "prints": [
+        {
+          "sl": "008-springstem_meadow-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Scott Kirschner"
         }
       ]
     },
@@ -41820,8 +43870,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -41830,6 +43881,15 @@
       "th": "1e 1f",
       "sl": "001-steppe-b-s",
       "prints": [
+        {
+          "sl": "008-steppe-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Andrea Modesti"
+        },
         {
           "sl": "002-steppe-b-s",
           "set": "Beta",
@@ -41865,6 +43925,36 @@
           "img": "",
           "flavor": "",
           "artist": "Andrea Modesti"
+        }
+      ]
+    },
+    {
+      "n": "Stiff-pitch Witch",
+      "el": "earth",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Tap, Banish a dead minion → Target a location up to three steps away. Each unit there takes 2 damage.",
+      "ar": "Scott Kirschner",
+      "th": "1e",
+      "sl": "008-stiff_pitch_witch-pd-s",
+      "sub": [
+        "Spirit"
+      ],
+      "prints": [
+        {
+          "sl": "008-stiff_pitch_witch-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Scott Kirschner"
         }
       ]
     },
@@ -41940,6 +44030,36 @@
           "img": "",
           "flavor": "",
           "artist": "Doug Kovacs"
+        }
+      ]
+    },
+    {
+      "n": "Stomping Mammoth",
+      "el": "water",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "While attacking, the Mammoth's excess damage is dealt to its site.",
+      "ar": "Juan Machuca",
+      "th": "1w",
+      "sl": "008-stomping_mammoth-pd-s",
+      "sub": [
+        "Beast"
+      ],
+      "prints": [
+        {
+          "sl": "008-stomping_mammoth-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Juan Machuca"
         }
       ]
     },
@@ -42256,6 +44376,33 @@
       ]
     },
     {
+      "n": "Sulfur Vents",
+      "el": "fire",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (1) → Deal 1 damage to each adjacent minion.",
+      "ar": "Dan Seagrave",
+      "th": "1f",
+      "sl": "008-sulfur_vents-pd-s",
+      "prints": [
+        {
+          "sl": "008-sulfur_vents-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Dan Seagrave"
+        }
+      ]
+    },
+    {
       "n": "Summer River",
       "el": "water",
       "t": "site",
@@ -42423,6 +44570,63 @@
           "img": "",
           "flavor": "",
           "artist": "Jeff A. Menges"
+        }
+      ]
+    },
+    {
+      "n": "Sunspear Tribe",
+      "el": "earth",
+      "t": "minion",
+      "c": 3,
+      "pw": 3,
+      "r": "ordinary",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Once per game → Throw a projectile that deals 1 damage.",
+      "ar": "Scott Kirschner",
+      "th": "2e",
+      "sl": "008-sunspear_tribe-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-sunspear_tribe-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Scott Kirschner"
+        }
+      ]
+    },
+    {
+      "n": "Supervolcano",
+      "el": "fire",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "(F)(F)(F) -- Trap (7) → All minions on the surface take 20 damage.",
+      "ar": "Emil Idzikowski",
+      "th": "1f",
+      "sl": "008-supervolcano-pd-s",
+      "prints": [
+        {
+          "sl": "008-supervolcano-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Emil Idzikowski"
         }
       ]
     },
@@ -42624,6 +44828,36 @@
           "img": "",
           "flavor": "",
           "artist": "AronjaArt"
+        }
+      ]
+    },
+    {
+      "n": "Swealand Longship",
+      "el": "water",
+      "t": "minion",
+      "c": 4,
+      "pw": 4,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Once on your turn, may move to an adjacent water site.",
+      "ar": "Melissa A. Benson",
+      "th": "2w",
+      "sl": "008-swealand_longship-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-swealand_longship-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Melissa A. Benson"
         }
       ]
     },
@@ -43312,6 +45546,33 @@
           "img": "",
           "flavor": "",
           "artist": "AronjaArt"
+        }
+      ]
+    },
+    {
+      "n": "Terraform",
+      "el": "earth",
+      "t": "magic",
+      "c": 1,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Replace sites in this column with ones from the top of their controller's atlas, starting at your back row going forwards.",
+      "ar": "Elvira Shakirova",
+      "th": "3e",
+      "sl": "008-terraform-pd-s",
+      "prints": [
+        {
+          "sl": "008-terraform-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Elvira Shakirova"
         }
       ]
     },
@@ -44286,6 +46547,36 @@
       ]
     },
     {
+      "n": "The White Death",
+      "el": "air",
+      "t": "minion",
+      "c": 2,
+      "pw": 2,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Ranged 3, Stealth\n\nLethal while Stealthed.",
+      "ar": "Paul Carrick",
+      "th": "2a",
+      "sl": "008-the_white_death-pd-s",
+      "sub": [
+        "Mortal"
+      ],
+      "prints": [
+        {
+          "sl": "008-the_white_death-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Paul Carrick"
+        }
+      ]
+    },
+    {
       "n": "The Wild Hunt",
       "el": "air",
       "t": "minion",
@@ -44371,8 +46662,9 @@
       "c": null,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "At the end of your turn, if minions atop this site total 5 or more power, submerge them.",
@@ -44380,6 +46672,15 @@
       "th": "1w",
       "sl": "006-thin_ice-b-s",
       "prints": [
+        {
+          "sl": "008-thin_ice-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Truitt Parrish"
+        },
         {
           "sl": "006-thin_ice-b-s",
           "set": "Gothic",
@@ -44787,8 +47088,9 @@
       "c": 2,
       "pw": null,
       "r": "exceptional",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Sacrifice → Bearer may cast an Ordinary spell from your collection.",
@@ -44799,6 +47101,15 @@
         "Relic"
       ],
       "prints": [
+        {
+          "sl": "008-toolbox-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
+        },
         {
           "sl": "006-toolbox-b-s",
           "set": "Gothic",
@@ -45200,6 +47511,33 @@
       ]
     },
     {
+      "n": "Trapper's Rest",
+      "el": "earth",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Genesis → You may reactivate an adjacent Trap for (1) less.",
+      "ar": "Caio Calazans",
+      "th": "1e",
+      "sl": "008-trappers_rest-pd-s",
+      "prints": [
+        {
+          "sl": "008-trappers_rest-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Caio Calazans"
+        }
+      ]
+    },
+    {
       "n": "Treetop Hideout",
       "el": "air",
       "t": "site",
@@ -45502,8 +47840,9 @@
       "c": 3,
       "pw": 2,
       "r": "ordinary",
-      "s": "Beta",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Beta",
         "Alpha"
       ],
@@ -45515,6 +47854,15 @@
         "Beast"
       ],
       "prints": [
+        {
+          "sl": "008-tufted_turtles-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Matt Tames"
+        },
         {
           "sl": "002-tufted_turtles-b-s",
           "set": "Beta",
@@ -45550,6 +47898,63 @@
           "img": "",
           "flavor": "",
           "artist": "Matt Tames"
+        }
+      ]
+    },
+    {
+      "n": "Tundra",
+      "el": "neutral",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Your (A) and (W) are equal to the higher of the two.",
+      "ar": "Mark Poole",
+      "th": "",
+      "sl": "008-tundra-pd-s",
+      "prints": [
+        {
+          "sl": "008-tundra-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Mark Poole"
+        }
+      ]
+    },
+    {
+      "n": "Tusslin' Trolls",
+      "el": "earth",
+      "t": "minion",
+      "c": 5,
+      "pw": 4,
+      "r": "elite",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "At the end of your turn, strike target adjacent minion for D6 damage.",
+      "ar": "Emil Idzikowski",
+      "th": "2e",
+      "sl": "008-tusslin_trolls-pd-s",
+      "sub": [
+        "Giant"
+      ],
+      "prints": [
+        {
+          "sl": "008-tusslin_trolls-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Emil Idzikowski"
         }
       ]
     },
@@ -47257,6 +49662,33 @@
       ]
     },
     {
+      "n": "Volcanic Eruption",
+      "el": "fire",
+      "t": "site",
+      "c": null,
+      "pw": null,
+      "r": "exceptional",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Trap (2) → Shoot three 1-damage projectiles in different cardinal directions.",
+      "ar": "Ralph Horsley",
+      "th": "1f",
+      "sl": "008-volcanic_eruption-pd-s",
+      "prints": [
+        {
+          "sl": "008-volcanic_eruption-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "exceptional",
+          "img": "",
+          "flavor": "",
+          "artist": "Ralph Horsley"
+        }
+      ]
+    },
+    {
       "n": "Vril Revenant",
       "el": "air",
       "t": "minion",
@@ -48073,6 +50505,33 @@
           "img": "",
           "flavor": "",
           "artist": "Jeffrey Laubenstein"
+        }
+      ]
+    },
+    {
+      "n": "When the Peaks Fell",
+      "el": "air",
+      "t": "magic",
+      "c": 5,
+      "pw": null,
+      "r": "unique",
+      "s": "Frost Mage Vs. Lavamancer",
+      "ss": [
+        "Frost Mage Vs. Lavamancer"
+      ],
+      "txt": "Choose any number of allied sites. Snow rolls forward from them, picking up surface units in its path and carrying them as far as possible. When it stops, they take 3 damage and are disabled until your next turn.",
+      "ar": "Jussi Pylkäs",
+      "th": "3a",
+      "sl": "008-when_the_peaks_fell-pd-s",
+      "prints": [
+        {
+          "sl": "008-when_the_peaks_fell-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "unique",
+          "img": "",
+          "flavor": "",
+          "artist": "Jussi Pylkäs"
         }
       ]
     },
@@ -48921,18 +51380,25 @@
       "c": null,
       "pw": null,
       "r": "ordinary",
-      "s": "Alpha",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Alpha"
       ],
       "txt": "Genesis → Look at your next spell. You may put it on the bottom of your spellbook.",
       "ar": "Matt Tames",
       "th": "1w",
-      "sl": "001-winter_river-bt-f",
-      "sub": [
-        "River"
-      ],
+      "sl": "008-winter_river-pd-s",
       "prints": [
+        {
+          "sl": "008-winter_river-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "ordinary",
+          "img": "",
+          "flavor": "",
+          "artist": "Matt Tames"
+        },
         {
           "sl": "001-winter_river-bt-f",
           "set": "Alpha",
@@ -49370,8 +51836,9 @@
       "c": null,
       "pw": null,
       "r": "elite",
-      "s": "Gothic",
+      "s": "Frost Mage Vs. Lavamancer",
       "ss": [
+        "Frost Mage Vs. Lavamancer",
         "Gothic"
       ],
       "txt": "Once on your turn, you may fly a minion atop here onto a nearby site.",
@@ -49379,6 +51846,15 @@
       "th": "1a",
       "sl": "006-wuthering_heights-b-s",
       "prints": [
+        {
+          "sl": "008-wuthering_heights-pd-s",
+          "set": "Frost Mage Vs. Lavamancer",
+          "finish": "Standard",
+          "rarity": "elite",
+          "img": "",
+          "flavor": "",
+          "artist": "Drew Tucker"
+        },
         {
           "sl": "006-wuthering_heights-b-s",
           "set": "Gothic",

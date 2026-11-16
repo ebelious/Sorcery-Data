@@ -36,19 +36,54 @@ export function fileKey(filename) {
   return flatten(base.replace(/foil|rainbow|standard/gi, ''));
 }
 
-/* Every printing slug cards.json mentions, indexed by its flattened card name. */
-/* Every slug cards.json names, for the exact-name check above. */
-export function knownSlugSet(cards) {
-  return new Set(cards.filter(c => c.sl).map(c => c.sl));
+/* Every printing slug a card has: the one it shows by default (`sl`) first, then each of
+   its printings (`prints[].sl` -- foils, other sets, promos), each once. cards.json gives
+   every printing its own slug, and its own file; reading only `sl` left all the others
+   with no art, and counted their files as "unmatched". */
+function printingSlugs(c) {
+  const out = [];
+  if (c && c.sl) out.push(c.sl);
+  if (c && Array.isArray(c.prints)) {
+    for (const p of c.prints) if (p && p.sl && !out.includes(p.sl)) out.push(p.sl);
+  }
+  return out;
 }
 
+/* EVERY printing cards.json lists, as slug -> set code. The set code is the slug's first
+   segment ("004-13_treasures_of_britain-b-f" -> "004"), which is also the folder its art
+   lives in: images/<set>/<slug>.webp. Used by seed-from-cdn.mjs and prepare-card-images.mjs
+   to know what art is wanted. */
+export function allPrintings(cards) {
+  const wanted = new Map();
+  for (const c of cards) {
+    for (const sl of printingSlugs(c)) {
+      if (!wanted.has(sl)) wanted.set(sl, String(sl).split('-')[0]);
+    }
+  }
+  return wanted;
+}
+
+/* Every slug cards.json names, every printing included, for the exact-name check in
+   slugForFile: the publisher names files by slug, so a foil file is matched to the foil
+   printing directly. */
+export function knownSlugSet(cards) {
+  const known = new Set();
+  for (const c of cards) for (const sl of printingSlugs(c)) known.add(sl);
+  return known;
+}
+
+/* Every printing slug, indexed by its flattened card name, for files named by hand. The
+   default printing comes first in each list, so a plain "Card Name.png" still goes to the
+   card's default printing as before; "Card Name foil.png" finds the -f printing. */
 export function indexBySlugCore(cards) {
   const byCore = new Map();
   for (const c of cards) {
-    if (!c.sl) continue;
-    const key = slugCore(c.sl) || flatten(c.n);
-    if (!byCore.has(key)) byCore.set(key, []);
-    byCore.get(key).push(c.sl);
+    for (const sl of printingSlugs(c)) {
+      const key = slugCore(sl) || flatten(c.n);
+      if (!byCore.has(key)) byCore.set(key, []);
+      const list = byCore.get(key);
+      if (!list.includes(sl)) list.push(sl);
+    }
   }
   return byCore;
 }
